@@ -1,1 +1,1 @@
-# retail-sale-project
+# SQL-retail-sale-project
