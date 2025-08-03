@@ -17,3 +17,6 @@ Exploratory Data Analysis (EDA): Conduct an initial examination of the dataset t
 
 Business Analysis: Write SQL queries to answer specific business questions and generate insights that can support decision-making.
 
+
+## Project structure 
+
