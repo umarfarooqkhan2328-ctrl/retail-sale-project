@@ -9,17 +9,15 @@ This project focuses on analyzing retail sales data using SQL. It involves creat
 
 ## Project Objectives:
 
-**Database Setup:** Build and populate the retail sales database using the provided dataset.
-
-**Data Cleaning:** Identify and remove records that contain missing or null values to ensure data quality.
-
-**Exploratory Data Analysis (EDA):** Conduct an initial examination of the dataset to uncover patterns, relationships, and anomalies.
-
-**Business Analysis:** Write SQL queries to answer specific business questions and generate insights that can support decision-making.
+- **Database Setup:** Build and populate the retail sales database using the provided dataset.
+- **Data Cleaning:** Identify and remove records that contain missing or null values to ensure data quality.
+- **Exploratory Data Analysis (EDA):** Conduct an initial examination of the dataset to uncover patterns, relationships, and anomalies.
+- **Business Analysis:** Write SQL queries to answer specific business questions and generate insights that can support decision-making.
 
 
 ## Project structure
 ### 1.Database Setup
+
 **Database Creation:** The project begins with the creation of a database called p1_retail_db.
 
 **Table Setup:** Within this database, a table named retail_sales is established to hold sales-related information. The table includes fields for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, unit price, cost of goods sold (COGS), and total sales amount.
@@ -43,10 +41,10 @@ CREATE TABLE retail_sales
 ```
 ### 2.Data Exploration & Cleaning
 
-- **Record Count:** `Determine the total number of records in the dataset.`
-- **Customer Count:** `Find out how many unique customers are in the dataset.`
-- **Category Count:** `Identify all unique product categories in the dataset.`
-- **Null Value Check:** `Check for any null values in the dataset and delete records with missing data.`
+- **Record Count:** Determine the total number of records in the dataset.
+- **Customer Count:** Find out how many unique customers are in the dataset.
+- **Category Count:** Identify all unique product categories in the dataset.
+- **Null Value Check:** Check for any null values in the dataset and delete records with missing data.
 
 
 ```sql
@@ -182,17 +180,25 @@ GROUP BY shifts;
 ```
 
 ## Findings
+
 **Customer Demographics:** The dataset includes customers from various age groups, with sales distributed across different categories such as Clothing and Beauty.
+
 **High-Value Transactions:** Several transactions had a total sale amount greater than 1000, indicating premium purchases.
+
 **Sales Trends:** Monthly analysis shows variations in sales, helping identify peak seasons.
+
 **Customer Insights:** The analysis identifies the top-spending customers and the most popular product categories.
 
 ## Reports
+
 **Sales Summary:** A detailed report summarizing total sales, customer demographics, and category performance.
+
 **Trend Analysis:** Insights into sales trends across different months and shifts.
+
 **Customer Insights:** Reports on top customers and unique customer counts per category.
 
 ## Conclusion
+
 This project offers a complete introduction to SQL for data analysts, encompassing database setup, data cleaning, exploratory analysis, and business-focused SQL queries. The insights gained can support informed business decisions by revealing sales trends, customer behavior, and product performance.
 
 
