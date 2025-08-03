@@ -19,4 +19,31 @@ Business Analysis: Write SQL queries to answer specific business questions and g
 
 
 ## Project structure 
+**Database Creation:** The project begins with the creation of a database called p1_retail_db.
+
+**Table Setup:** Within this database, a table named retail_sales is established to hold sales-related information. The table includes fields for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, unit price, cost of goods sold (COGS), and total sales amount.
+
+```sql
+SELECT COUNT(*) FROM retail_sales;
+SELECT COUNT(DISTINCT customer_id) FROM retail_sales;
+SELECT DISTINCT category FROM retail_sales;
+
+SELECT * FROM retail_sales
+WHERE 
+    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
+    gender IS NULL OR age IS NULL OR category IS NULL OR 
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+
+DELETE FROM retail_sales
+WHERE 
+    sale_date IS NULL OR sale_time IS NULL OR customer_id IS NULL OR 
+    gender IS NULL OR age IS NULL OR category IS NULL OR 
+    quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
+```
+
+## 3. Data Analysis & Insights
+The SQL queries below were created to address key business questions and uncover actionable insights."
+
+`Question 1:` Write a SQL query to retrieve all columns for sales made on '2022-11-05'.
+
 
