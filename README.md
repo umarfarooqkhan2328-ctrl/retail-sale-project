@@ -9,19 +9,45 @@ This project focuses on analyzing retail sales data using SQL. It involves creat
 
 ## Project Objectives:
 
-Database Setup: Build and populate the retail sales database using the provided dataset.
+**Database Setup:** Build and populate the retail sales database using the provided dataset.
 
-Data Cleaning: Identify and remove records that contain missing or null values to ensure data quality.
+**Data Cleaning:** Identify and remove records that contain missing or null values to ensure data quality.
 
-Exploratory Data Analysis (EDA): Conduct an initial examination of the dataset to uncover patterns, relationships, and anomalies.
+**Exploratory Data Analysis (EDA):** Conduct an initial examination of the dataset to uncover patterns, relationships, and anomalies.
 
-Business Analysis: Write SQL queries to answer specific business questions and generate insights that can support decision-making.
+**Business Analysis:** Write SQL queries to answer specific business questions and generate insights that can support decision-making.
 
 
-## Project structure 
+## Project structure
+### 1.Database Setup
 **Database Creation:** The project begins with the creation of a database called p1_retail_db.
 
 **Table Setup:** Within this database, a table named retail_sales is established to hold sales-related information. The table includes fields for transaction ID, sale date, sale time, customer ID, gender, age, product category, quantity sold, unit price, cost of goods sold (COGS), and total sales amount.
+```sql
+CREATE DATABASE p1_retail_db;
+
+CREATE TABLE retail_sales
+(
+    transactions_id INT PRIMARY KEY,
+    sale_date DATE,	
+    sale_time TIME,
+    customer_id INT,	
+    gender VARCHAR(10),
+    age INT,
+    category VARCHAR(35),
+    quantity INT,
+    price_per_unit FLOAT,	
+    cogs FLOAT,
+    total_sale FLOAT
+);
+```
+### 2.Data Exploration & Cleaning
+
+- **Record Count:** `Determine the total number of records in the dataset.`
+- **Customer Count:** `Find out how many unique customers are in the dataset.`
+- **Category Count:** `Identify all unique product categories in the dataset.`
+- **Null Value Check:** `Check for any null values in the dataset and delete records with missing data.`
+
 
 ```sql
 SELECT COUNT(*) FROM retail_sales;
@@ -41,7 +67,7 @@ WHERE
     quantity IS NULL OR price_per_unit IS NULL OR cogs IS NULL;
 ```
 
-## 3. Data Analysis & Insights
+### 3. Data Analysis & Insights
 The SQL queries below were created to address key business questions and uncover actionable insights."
 
 `Question 1:` Write a SQL query to retrieve all columns for sales made on '2022-11-05'.
