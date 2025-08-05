@@ -13,7 +13,7 @@ This project focuses on analyzing retail sales data using SQL. It involves creat
 - **Data Cleaning:** Identify and remove records that contain missing or null values to ensure data quality.
 - **Exploratory Data Analysis (EDA):** Conduct an initial examination of the dataset to uncover patterns, relationships, and anomalies.
 - **Business Analysis:** Write SQL queries to answer specific business questions and generate insights that can support decision-making.
-
+  
 
 ## Project structure
 ### 1.Database Setup
